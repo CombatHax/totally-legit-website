@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Enter Info</title>
+</head>
+<body>
+	<h1 style="text-align: center;"><em>FREE CSGO SKINS</em></h1>
+	<form style="text-align: center;">
+		Name:
+		<br>
+		<input type="text">
+		<br>
+		Credit Card Number
+		<br>
+		<input type="text">
+		<br>
+		<button id="submit" onmouseover="changeSubmitText(0)" onmouseleave="changeSubmitText(1)">Submit</button>
+	</form>
+	<script>
+		textOptions = ["Send to Kellan", "Submit"]
+		function changeSubmitText(toggle) {
+			document.getElementById("submit").innerHTML = textOptions[toggle];
+		}
+	</script>
+</body>
+</html>
